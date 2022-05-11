@@ -14,6 +14,13 @@ import { ContactPage } from './pages/contact/contact.page';
 import { LatestPostsComponent } from './components/latest-posts/latest-posts.component';
 import { GithubActivityComponent } from './components/github-activity/github-activity.component';
 import { EventsComponent } from './components/events/events.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -33,8 +40,19 @@ import { EventsComponent } from './components/events/events.component';
     BlogModule,
     FontAwesomeModule,
     NgxTypedJsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage:"en",
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+

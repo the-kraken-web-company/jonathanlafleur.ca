@@ -1,0 +1,8 @@
+{
+	"GENERAL": {
+		"HELLO_MESSAGE": "Hello world!"
+	},
+	"NAVIGATION": {
+		"LANG_SWITCHER": "Visiter ce site <br> en français"
+	}
+}

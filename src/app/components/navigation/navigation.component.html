@@ -20,10 +20,10 @@
 
     <div class="grow pr-8 text-xl font-light">
         <ul class="flex justify-end top-navigation">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#" class="lang-switch">Visiter ce site <br> en français</a></li>
+            <li><a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+            <li><a href="#" routerLinkActive="active">Blog</a></li>
+            <li><a [routerLink]="['contact']" routerLinkActive="active">Contact</a></li>
+            <li><a innerHTML="{{ 'NAVIGATION.LANG_SWITCHER' | translate }}" class="lang-switch" (click)="setLanguage()"></a></li>
         </ul>
     </div>
 

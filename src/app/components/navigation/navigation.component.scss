@@ -4,27 +4,27 @@
         
         a {
             @apply p-4;
+            @apply block;
+
+            
+            border-top:1px solid transparent;
+            border-bottom:2px solid transparent;
 
             &.active {
-                border-bottom:2px solid white;
                 border-top:1px solid white;
+                border-bottom:2px solid white;
             }
 
-            &:hover {
-                border-bottom:1px solid white;
-                border-top:2px solid white;
+            &:hover, &:focus, &:active {
+                border-top:1px solid transparent;
+                border-bottom:2px solid white;
             }
 
             &.lang-switch {
-                @apply text-sm; 
-
-                &:hover {
-                    border-bottom:0px;
-                    border-top:0px;
-                    background-color:white;
-                    color:black;
-                }
+                @apply text-sm;
+                
+                margin-top:-5px;
             }
-        }       
+        }
     }
 }
