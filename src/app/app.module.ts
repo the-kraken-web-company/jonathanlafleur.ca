@@ -11,6 +11,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { CtaComponent } from './components/cta/cta.component';
 import { ContactPage } from './pages/contact/contact.page';
+import { LatestPostsComponent } from './components/latest-posts/latest-posts.component';
+import { GithubActivityComponent } from './components/github-activity/github-activity.component';
+import { EventsComponent } from './components/events/events.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { ContactPage } from './pages/contact/contact.page';
     HomePage,
     ContactPage,
     NavigationComponent,
+    LatestPostsComponent,
+    GithubActivityComponent,
+    EventsComponent,
     CtaComponent,
     FooterComponent
   ],

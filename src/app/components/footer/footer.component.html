@@ -1,0 +1,41 @@
+<div class="text-xs container mx-auto">
+    <div class="flex py-8">
+        <div>
+            <div class="block">Jonathan Lafleur</div>
+            <div class="block pb-4">/ Consultant / Developer / Instructor / Speaker /</div>
+            <div class="pb-4">
+                <fa-icon [icon]="icons.linkedIn" class="text-black pr-2"></fa-icon>
+                <fa-icon [icon]="icons.github" class="text-black pr-2"></fa-icon>
+            </div>
+            <div>Copyright &copy; 2020 &mdash; {{ copyrightYear }}, All right reserved</div>
+        </div>
+        <div class="grow pr-8 self-right font-light">
+            <ul class="flex justify-end">
+                <li class="pl-3">Home</li>
+                <li class="pl-3">Blog</li>
+                <li class="pl-3">Contact</li>
+                <li class="pl-3">Français</li>
+            </ul>
+            <div class="flex justify-end pt-4 italic">
+                <ngx-typed-js 
+                    [strings]="[
+                        'save the world, but it\' not open sourced.', 
+                        'save the world, but they don\'t want to give me the source code.',
+                        'be superman!',
+                        'work with you!', 
+                        'teach you!',
+                        'drink less coffee!',
+                        'learn more about you!',
+                    ]"
+                    [loop] = "true"
+                    [typeSpeed] = "100"
+                    [backSpeed] = "25"
+                    [backDelay] = "1500"
+                    [smartBackspace] = "true"
+                >
+                    I would like to <span class="typing"></span>
+                  </ngx-typed-js>
+            </div>
+        </div>
+    </div>
+</div>

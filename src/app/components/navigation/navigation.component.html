@@ -1,0 +1,39 @@
+<div class="flex justify-items-center items-center">
+    
+    <div class="flex flex-col">
+        <a href="#">
+            <div class="text-3xl block">Jonathan Lafleur</div>
+            <div class="font-light tracking-widest">
+                <ngx-typed-js 
+                    [strings]="['Consultant', 'Developer', 'Instructor', 'Speaker']"
+                    [loop] = "true"
+                    [typeSpeed] = "175"
+                    [backSpeed] = "25"
+                    [backDelay] = "2500"
+                    [smartBackspace] = "true"
+                >
+                    <span class="typing"></span>
+                  </ngx-typed-js>
+            </div>
+        </a>
+    </div>
+
+    <div class="grow pr-8 text-xl font-light">
+        <ul class="flex justify-end top-navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="lang-switch">Visiter ce site <br> en français</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <div>
+            <fa-stack>
+                <fa-icon [icon]="icons.circle" stackItemSize="2x" class="text-white"></fa-icon>
+                <fa-icon [icon]="icons.search" stackItemSize="1x" class="text-black"></fa-icon>
+            </fa-stack>
+        </div>
+    </div>
+    
+</div>

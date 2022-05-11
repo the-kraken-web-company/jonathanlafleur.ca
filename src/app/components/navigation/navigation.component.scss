@@ -1,0 +1,30 @@
+.top-navigation {
+    li {
+        @apply ml-3;
+        
+        a {
+            @apply p-4;
+
+            &.active {
+                border-bottom:2px solid white;
+                border-top:1px solid white;
+            }
+
+            &:hover {
+                border-bottom:1px solid white;
+                border-top:2px solid white;
+            }
+
+            &.lang-switch {
+                @apply text-sm; 
+
+                &:hover {
+                    border-bottom:0px;
+                    border-top:0px;
+                    background-color:white;
+                    color:black;
+                }
+            }
+        }       
+    }
+}
